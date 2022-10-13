@@ -16,48 +16,47 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico?" />
       </Head>
 
-      <main className="grid grid-cols-4 gap-6 m-5">
-        <div>
-          <ThemedLink to="/stories"> Stories And Advice </ThemedLink>
-        </div>
-        <div className="col-start-4 col-end-5 m-auto">
-          <ThemedLink to="/QandA"> Questions and Answers </ThemedLink>
-        </div>
+      <main className="grid grid-cols-4 gap-6 place-content-center m-3">
+       
+          <div className="col-start-1 col-end-2 ">
+            <ThemedLink to="/stories"> Stories And Advice </ThemedLink>
+          </div>
+          <div className="col-start-3 ">
+            <ThemedLink to="/QandA"> Ask Questions </ThemedLink>
+          </div>
+       
 
         <div className="col-span-4">
           <SearchBox placeholder="Search College Overflow.." />
         </div>
 
+
         <StoryView
           title="How I got into Stanford with an SAT score of 900"
           author="Oluwa Bezos"
-          datePublished="March 14th 2021"
-          tags={[
-            "Stanford",
-            "SAT",
-            "Low Score Acceptance",
-            "Legacy Admissions",
-            "lorem",
-            "jsfuck",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-          ]}
+          datePublished="14-03-2021"
+          story="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam commodi molestias similique impedit provident iste eveniet ratione et dolorem nam illum necessitatibus odio blanditiis, debitis qui nostrum ad temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam commodi molestias similique impedit provident iste eveniet ratione et dolorem nam illum necessitatibus odio blanditiis, debitis qui nostrum ad temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam commodi molestias similique impedit provident iste eveniet ratione et dolorem nam illum necessitatibus odio blanditiis, debitis qui nostrum ad temporibus!"
         />
+
 
         <QuestionView>
           <h4>Is MIT Test Optional?</h4>
         </QuestionView>
-        <StoryView>
-          <h4>How To Approach Your Common App Essays</h4>
-        </StoryView>
+        <StoryView
+          title="How I got into Stanford with an SAT score of 900"
+          author="Oluwa Bezos"
+          datePublished="14-03-2021"
+          story="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam commodi molestias similique impedit provident iste eveniet ratione et dolorem nam illum necessitatibus odio blanditiis, debitis qui nostrum ad temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam commodi molestias similique impedit provident iste eveniet ratione et dolorem nam illum necessitatibus odio blanditiis, debitis qui nostrum ad temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam commodi molestias similique impedit provident iste eveniet ratione et dolorem nam illum necessitatibus odio blanditiis, debitis qui nostrum ad temporibus!"
+        />
         <QuestionView>
           <h4>Will I Get Into Havard?</h4>
         </QuestionView>
-        <StoryView>
-          <h4>How To Organise Your Activities List</h4>
-        </StoryView>
+        <StoryView
+          title="How To Organise Your Activity list"
+          author="Oluwa Bezos"
+          datePublished="14-03-2021"
+          story="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam commodi molestias similique impedit provident iste eveniet ratione et dolorem nam illum necessitatibus odio blanditiis, debitis qui nostrum ad temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam commodi molestias similique impedit provident iste eveniet ratione et dolorem nam illum necessitatibus odio blanditiis, debitis qui nostrum ad temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam commodi molestias similique impedit provident iste eveniet ratione et dolorem nam illum necessitatibus odio blanditiis, debitis qui nostrum ad temporibus!"
+        />
       </main>
     </>
   );
